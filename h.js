@@ -6,8 +6,8 @@ const wisher = document.getElementById('wisher');
 let urlParam = new URLSearchParams(data);
 
 let n = urlParam.get('n') || "Hrishikesh";
-let d = urlParam.get('d') || "1.1";
-let m = urlParam.get('m') || "Always";
+let d = urlParam.get('d') || "2.12";
+let m = urlParam.get('m') || "Dario";
 
 const input = d; // Example input
 const [day, month] = input.split(".").map(Number); // Split and convert to numbers
@@ -44,8 +44,6 @@ function startCountdown(targetDate) {
             document.getElementById('flscrn').style.display = 'none';
 
             startGreetings();
-
-            return;
         } else {
             document.getElementById('countdown').style.display = 'flex';
             document.getElementById('flscrn').style.display = 'flex';
@@ -74,7 +72,7 @@ startCountdown(date);
 function startGreetings() {
     document.getElementById('greetings').style.display = 'flex';
     fname.textContent = String(n);
-    wisher.textContent = String("Yours, " + m + ".");
+    wisher.textContent = String("In Liebe, dein " + m + ".");
     // Start displaying quotes
     // setTimeout(() => {
     //     displayQuote(); // Show the first quote
@@ -133,7 +131,7 @@ fullscreenButton.addEventListener('click', () => {
     if (!document.fullscreenElement) {
         // Enter fullscreen
         if (document.documentElement.requestFullscreen) {
-            document.documentElement.requestFullscreen();
+            void document.documentElement.requestFullscreen();
         } else if (document.documentElement.webkitRequestFullscreen) {
             document.documentElement.webkitRequestFullscreen();
         } else if (document.documentElement.msRequestFullscreen) {
@@ -143,7 +141,7 @@ fullscreenButton.addEventListener('click', () => {
     } else {
         // Exit fullscreen
         if (document.exitFullscreen) {
-            document.exitFullscreen();
+            void document.exitFullscreen();
         } else if (document.webkitExitFullscreen) {
             document.webkitExitFullscreen();
         } else if (document.msExitFullscreen) {
