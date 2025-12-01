@@ -246,6 +246,13 @@ body {
     animation-delay: 2s; /* Start animation after 3 seconds */
 }
 
+#otter {
+    max-height: 300px;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 2s ease-in forwards; /* 2s fade-in animation */
+    animation-delay: 2s; /* Start animation after 3 seconds */
+}
+
 #slider-wrapper {
     margin-top: 2vh;
     width: 100vw;
