@@ -76,10 +76,10 @@ function startGreetings() {
     fname.textContent = String(n);
     wisher.textContent = String("Yours, " + m + ".");
     // Start displaying quotes
-    setTimeout(() => {
-        displayQuote(); // Show the first quote
-        setInterval(displayQuote, 6000); // Change quote every 3 seconds
-    }, 5000);
+    // setTimeout(() => {
+    //     displayQuote(); // Show the first quote
+    //     setInterval(displayQuote, 6000); // Change quote every 3 seconds
+    // }, 5000);
 }
 
 let BDquotes = [
