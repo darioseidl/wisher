@@ -221,7 +221,7 @@ body {
 #happybd {
     margin-top: 10vh;
     color: rgb(255, 248, 212);
-    font-size: clamp(3rem, 12vw, 7rem); /* Minimum 14px, maximum 20px, adjusts with 2vw */
+    font-size: clamp(2rem, 5vw, 4rem); /* Minimum 14px, maximum 20px, adjusts with 2vw */
     font-family: 'sunflower';
     text-shadow: 0 0 1vw #fcf7cdc4,
     0 0 2vw #fff98ea8,
