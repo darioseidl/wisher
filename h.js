@@ -41,12 +41,10 @@ function startCountdown(targetDate) {
             clearInterval(interval);
             //console.log("Countdown finished!");
             document.getElementById('countdown').style.display = 'none';
-            document.getElementById('flscrn').style.display = 'none';
 
             startGreetings();
         } else {
             document.getElementById('countdown').style.display = 'flex';
-            document.getElementById('flscrn').style.display = 'flex';
             // Calculate time components
             let days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
             let hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -120,40 +118,4 @@ BDquotes.forEach(quote => {
     quoteDiv.classList.add('quote');
     quoteDiv.textContent = quote;
     quoteContainer.appendChild(quoteDiv);
-});
-
-//fullscreen mode.
-
-const fullscreenButton = document.getElementById('fullscreenButton');
-
-fullscreenButton.addEventListener('click', () => {
-    // Check if we're currently in fullscreen
-    if (!document.fullscreenElement) {
-        // Enter fullscreen
-        if (document.documentElement.requestFullscreen) {
-            void document.documentElement.requestFullscreen();
-        } else if (document.documentElement.webkitRequestFullscreen) {
-            document.documentElement.webkitRequestFullscreen();
-        } else if (document.documentElement.msRequestFullscreen) {
-            document.documentElement.msRequestFullscreen();
-        }
-        fullscreenButton.textContent = "X-FullScrn"; // Update button text
-    } else {
-        // Exit fullscreen
-        if (document.exitFullscreen) {
-            void document.exitFullscreen();
-        } else if (document.webkitExitFullscreen) {
-            document.webkitExitFullscreen();
-        } else if (document.msExitFullscreen) {
-            document.msExitFullscreen();
-        }
-        fullscreenButton.textContent = "FullScreen"; // Update button text
-    }
-});
-
-// Update button text when the user exits fullscreen with the Esc key
-document.addEventListener('fullscreenchange', () => {
-    if (!document.fullscreenElement) {
-        fullscreenButton.textContent = "Fullscreen";
-    }
 });
