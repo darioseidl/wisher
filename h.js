@@ -26,7 +26,7 @@ window.addEventListener("DOMContentLoaded", () => {
         // Wait for the fade-out effect to complete before hiding
         setTimeout(() => {
             preloader.style.display = "none"; // Fully hide the preloader
-            document.getElementById("content").style.display = "block"; // Show main content
+            // document.getElementById("content").style.display = "block"; // Show main content
         }, 1000); // Match this with the CSS transition duration
     }, 1000); // 000ms = 1 seconds
 });
