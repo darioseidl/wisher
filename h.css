@@ -1,21 +1,21 @@
 @font-face {
     font-family: 'hunter';
-    src: url('./fonts/Hunters.otf') format('truetype'); /* Regular font */
+    src: url('./fonts/Hunters.otf') format('truetype');
 }
 
 @font-face {
     font-family: 'sunflower';
-    src: url('./fonts/SunFlower.ttf') format('truetype'); /* Regular font */
+    src: url('./fonts/SunFlower.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'gill';
-    src: url('./fonts/GILLR.TTF') format('truetype'); /* Regular font */
+    src: url('./fonts/GILLR.TTF') format('truetype');
 }
 
 @font-face {
     font-family: 'roboto';
-    src: url('./fonts/Roboto-Regular.ttf') format('truetype'); /* Regular font */
+    src: url('./fonts/Roboto-Regular.ttf') format('truetype');
 }
 
 body {
@@ -36,8 +36,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1d1b1d; /* Background color */
-    color: #ffffffed; /* Text color */
+    background-color: #1d1b1d;
+    color: #ffffffed;
     font-family: 'roboto';
     font-size: clamp(1.8rem, 4vw, 2.5rem);
     z-index: 9999; /* Keep the preloader on top */
@@ -221,7 +221,7 @@ body {
 #happybd {
     margin-top: 10vh;
     color: rgb(255, 248, 212);
-    font-size: clamp(2rem, 5vw, 4rem); /* Minimum 14px, maximum 20px, adjusts with 2vw */
+    font-size: clamp(2rem, 5vw, 4rem);
     font-family: 'sunflower';
     text-shadow: 0 0 1vw #fcf7cdc4,
     0 0 2vw #fff98ea8,
@@ -229,28 +229,28 @@ body {
     0 0 8vw rgba(254, 241, 55, 0.212);
 
     opacity: 0; /* Initially hidden */
-    animation: fadeIn 2s ease-in forwards; /* 2s fade-in animation */
-    animation-delay: 1s; /* Start animation after 3 seconds */
+    animation: fadeIn 2s ease-in forwards;
+    animation-delay: 1s;
 }
 
 #fname {
     color: rgb(205, 248, 254);
-    font-size: clamp(2rem, 5vw, 4rem); /* Minimum 14px, maximum 20px, adjusts with 2vw */
+    font-size: clamp(2rem, 5vw, 4rem);
     font-family: 'sunflower';
     text-shadow: 0 0 0.6vw rgba(153, 239, 252, 0.795),
     0 0 1.2vw rgba(93, 232, 253, 0.645),
     0 0 2.4vw rgba(55, 223, 249, 0.584),
     0 0 4.8vw rgba(30, 221, 250, 0.215);
     opacity: 0; /* Initially hidden */
-    animation: fadeIn 2s ease-in forwards; /* 2s fade-in animation */
-    animation-delay: 2s; /* Start animation after 3 seconds */
+    animation: fadeIn 5s ease-in forwards;
+    animation-delay: 3s;
 }
 
 #otter {
     max-height: 300px;
     opacity: 0; /* Initially hidden */
-    animation: fadeIn 2s ease-in forwards; /* 2s fade-in animation */
-    animation-delay: 2s; /* Start animation after 3 seconds */
+    animation: fadeIn 2s ease-in forwards;
+    animation-delay: 5s;
 }
 
 #slider-wrapper {
@@ -262,7 +262,7 @@ body {
     align-items: center;
     font-size: 100%;
     text-align: center;
-    animation-delay: 4s; /* Start animation after 3 seconds */
+    animation-delay: 4s;
 }
 
 /* Styling for the slider container */
@@ -273,7 +273,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'roboto';
-    font-size: clamp(0.9rem, 2vw, 1.6rem); /* Minimum 14px, maximum 20px, adjusts with 2vw */
+    font-size: clamp(0.9rem, 2vw, 1.6rem);
     text-align: center;
     color: #f9f8da;
     border-radius: 10px;
@@ -285,8 +285,8 @@ body {
 
 .quote {
     position: absolute;
-    opacity: 0; /* Hidden by default */
-    animation: opacity 6s infinite; /* Apply the animation */
+    opacity: 0;
+    animation: opacity 6s infinite;
     display: none; /* Ensure only one quote is visible */
 }
 
@@ -309,8 +309,8 @@ body {
     font-family: 'sunflower';
     margin: 5vh;
     opacity: 0;
-    animation: fadeIn 2s ease-in forwards; /* 2s fade-in animation */
-    animation-delay: 7s; /* Start animation after 3 seconds */
+    animation: fadeIn 2s ease-in forwards;
+    animation-delay: 7s;
     text-shadow: 0 0 0.6vw rgba(128, 255, 168, 0.785),
     0 0 0.6vw rgba(81, 255, 136, 0.564);
 }
@@ -364,8 +364,8 @@ body {
     font-weight: bold;
     z-index: 1;
     margin-top: auto; /* Push the text to the bottom of the container */
-    color: rgba(72, 240, 224, 0.579); /* Set text color */
-    text-align: center; /* Center align the text */
+    color: rgba(72, 240, 224, 0.579);
+    text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     border-radius: 3px;
 }
@@ -383,8 +383,8 @@ body {
     font-size: 0.6rem;
     font-weight: bold;
     z-index: 1;
-    color: rgba(72, 240, 117, 0.579); /* Set text color */
-    text-align: center; /* Center align the text */
+    color: rgba(72, 240, 117, 0.579);
+    text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     border-radius: 3px;
 }
