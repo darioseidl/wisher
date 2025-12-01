@@ -246,8 +246,9 @@ body {
     animation-delay: 3s;
 }
 
-#otter {
-    max-height: 300px;
+.otter {
+    align-self: center;
+    width: 200px;
     opacity: 0; /* Initially hidden */
     animation: fadeIn 2s ease-in forwards;
     animation-delay: 5s;
