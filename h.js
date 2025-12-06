@@ -5,8 +5,8 @@ const timer = document.getElementById('timer');
 const wisher = document.getElementById('wisher');
 let urlParam = new URLSearchParams(data);
 
-let n = urlParam.get('n') || "Prokrastinieren";
-let d = urlParam.get('d') || "5.12";
+let n = urlParam.get('n') || "Knutschentzugserscheinungen";
+let d = urlParam.get('d') || "6.12";
 let m = urlParam.get('m') || "Dario";
 
 const input = d; // Example input
