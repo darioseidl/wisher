@@ -5,7 +5,7 @@ const timer = document.getElementById('timer');
 const wisher = document.getElementById('wisher');
 let urlParam = new URLSearchParams(data);
 
-let n = urlParam.get('n') || "Katerkuschelsonntag";
+let n = urlParam.get('n') || "Zahnbürstenhoarding";
 let d = urlParam.get('d') || "22.12";
 let m = urlParam.get('m') || "Dario";
 
